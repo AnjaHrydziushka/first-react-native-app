@@ -68,7 +68,7 @@ export default function GameScreen({ route, navigation }) {
       <View style={{ marginBottom: 20 }}>
 
         <MyButton
-          title={paused ? "Restart" : "Pause"}
+          title={paused ? "Restart" : "STOP"}
           onPress={() => {
             set_paused(!paused);
           }}
