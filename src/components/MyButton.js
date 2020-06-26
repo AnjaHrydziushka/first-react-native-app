@@ -22,14 +22,15 @@ export default function MyButton({ title, onPress }) {
             toValue: 1,
             speed: 50,
             bounciness: 10,
-            
+            useNativeDriver: false
             }).start();
       }}
       onPressOut={e => {
         Animated.spring(pressedAnim, {
             toValue: 0,
             speed: 30,
-            bounciness: 25
+            bounciness: 25,
+            useNativeDriver: false
           }).start();;
       }}
       onPress={onPress}
